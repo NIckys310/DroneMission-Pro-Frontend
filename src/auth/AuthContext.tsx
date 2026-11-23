@@ -3,6 +3,13 @@ import { authApi } from '../api/endpoints';
 import { TOKEN_KEY } from '../api/client';
 import type { RoleName, UserInfo } from '../types';
 
+// ============================================================================================
+// GUÍA RÁPIDA · AuthContext (sesión y permisos)
+//
+// Para qué sirve: guarda el usuario que inició sesión y ofrece can("PERMISO") para mostrar u ocultar cosas.
+// Uso típico en una pantalla: const { can } = useAuth();  {can("DRONES_GESTIONAR") && <Button>…</Button>}
+// ============================================================================================
+
 interface AuthState {
   user: UserInfo | null;
   loading: boolean;

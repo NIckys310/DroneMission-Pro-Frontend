@@ -3,6 +3,14 @@ import { missionType, options, priority } from '../../utils/labels';
 import { today } from '../../utils/format';
 import type { FieldConfig } from '../../utils/validation';
 
+// ============================================================================================
+// GUÍA RÁPIDA · Formulario de misión
+//
+// Para qué sirve: lista de campos del formulario de misión; el componente EntityFormDialog los dibuja y valida solo.
+// Si te piden AGREGAR un campo: agrega una línea al arreglo (name igual al del DTO del backend).
+// Si cambias una regla del backend (ej. altitud máxima), ajusta aquí el min/max para que coincidan.
+// ============================================================================================
+
 /** Campos del formulario de misión (las opciones de cliente se cargan desde la API). */
 export function missionFields(clients: Client[]): FieldConfig[] {
   return [

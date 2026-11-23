@@ -1,6 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { errorMessage } from '../api/client';
 
+// ============================================================================================
+// GUÍA RÁPIDA · useFetch
+//
+// Para qué sirve: carga datos del backend y maneja "cargando" y errores. Con un intervalo hace polling
+//   (por ejemplo, la telemetría se consulta cada 2 s mientras la misión vuela).
+// ============================================================================================
+
 /**
  * Carga datos del backend y expone { data, loading, error, reload }.
  * Si se indica pollMs, vuelve a consultar periódicamente (telemetría en vivo).

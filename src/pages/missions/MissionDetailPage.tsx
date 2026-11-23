@@ -48,6 +48,14 @@ import FlightPlanPanel from './FlightPlanPanel';
 import { missionFields, missionToForm } from './missionForm';
 import { incidentFields } from './incidentForm';
 
+// ============================================================================================
+// GUÍA RÁPIDA · Detalle de misión
+//
+// Para qué sirve: muestra la misión con sus pestañas (resumen, vuelo y telemetría, plan, incidentes, evidencias, historial).
+// Los botones de acción salen de m.availableActions, que calcula el backend (MissionAccessService).
+// Si agregas una acción nueva: su botón va aquí, mostrado solo si has("ACCION"), y llama a su función de api/endpoints.ts.
+// ============================================================================================
+
 type DialogName = 'edit' | 'delete' | 'assign' | 'cancel' | 'prepare' | 'finish' | 'observe' | 'incident' | 'evidence' | 'pause' | null;
 
 export default function MissionDetailPage() {

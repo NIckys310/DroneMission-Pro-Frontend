@@ -9,6 +9,13 @@ import { formatDuration, formatNumber } from '../../utils/format';
 import type { FlightPlan, Mission } from '../../types';
 import { AXIS, GRID, SERIES_1, SERIES_2 } from '../home/charts';
 
+// ============================================================================================
+// GUÍA RÁPIDA · Panel de telemetría
+//
+// Para qué sirve: mapa, indicadores y gráfica del vuelo. Consulta la telemetría cada 2 s solo si la misión
+//   está EN_VUELO o PAUSADA. Para cambiar la frecuencia, cambia el 2000 (milisegundos).
+// ============================================================================================
+
 function Gauge({ label, value, unit, sub }: { label: string; value: string; unit?: string; sub?: React.ReactNode }) {
   return (
     <Box sx={{ p: 1.5, borderRadius: 2, bgcolor: '#f6f9fc', border: '1px solid', borderColor: 'divider', height: '100%' }}>

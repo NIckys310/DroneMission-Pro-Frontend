@@ -1,6 +1,14 @@
 import axios, { AxiosError } from 'axios';
 import type { ApiError } from '../types';
 
+// ============================================================================================
+// GUÍA RÁPIDA · Cliente HTTP
+//
+// Para qué sirve: única instancia de Axios. Agrega el token JWT a cada petición y, si el backend responde 401,
+//   cierra la sesión y vuelve al login. Todas las llamadas al servidor pasan por aquí.
+// Normalmente no hay que tocarlo. Los endpoints se agregan en api/endpoints.ts.
+// ============================================================================================
+
 export const TOKEN_KEY = 'dronemission.token';
 
 /**

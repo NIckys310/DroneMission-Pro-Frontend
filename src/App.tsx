@@ -23,6 +23,14 @@ import RolesPage from './pages/users/RolesPage';
 import AuditPage from './pages/audit/AuditPage';
 import { Loading } from './components/Feedback';
 
+// ============================================================================================
+// GUÍA RÁPIDA · Rutas de la aplicación
+//
+// Si te piden AGREGAR una página: 1) Crea el componente en pages/  2) Agrega su <Route> aquí, dentro del
+//   ProtectedRoute con el permiso que corresponda  3) Agrega su opción del menú en useNavItems() de components/layout/AppLayout.tsx.
+// Si te piden QUITAR una página: borra su <Route>, su enlace del menú y su carpeta en pages/.
+// ============================================================================================
+
 // El simulador 3D (Three.js) se descarga solo cuando se abre, para que el resto cargue rápido
 const SimulatorPage = lazy(() => import('./pages/simulator/SimulatorPage'));
 

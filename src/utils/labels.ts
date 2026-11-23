@@ -1,3 +1,10 @@
+// ============================================================================================
+// GUÍA RÁPIDA · Etiquetas en español
+//
+// Para qué sirve: traduce los valores de los enums del backend (INSPECCION, EN_VUELO...) al texto que ve el usuario.
+// Si el backend agrega un valor nuevo a un enum, agrega aquí su etiqueta.
+// ============================================================================================
+
 // Textos en español y colores para cada valor de los enums del backend.
 
 export type ChipColor = 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info';

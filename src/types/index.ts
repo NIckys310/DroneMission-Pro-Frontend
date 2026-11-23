@@ -1,3 +1,11 @@
+// ============================================================================================
+// GUÍA RÁPIDA · Tipos (reflejan los DTO del backend)
+//
+// Si cambias un DTO del backend (MissionResponse, DroneRequest...), cambia aquí su interface con el mismo nombre de campo.
+// Si agregas un valor a un enum del backend (MissionType, MissionStatus...), agrégalo aquí y en utils/labels.ts.
+// TypeScript marca en rojo todas las pantallas afectadas: sigue esos errores.
+// ============================================================================================
+
 // Tipos que reflejan exactamente los DTOs del backend (paquetes */dto).
 
 export type RoleName = 'ADMINISTRADOR' | 'OPERADOR' | 'PILOTO' | 'TECNICO' | 'CLIENTE';

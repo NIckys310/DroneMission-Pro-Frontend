@@ -5,6 +5,14 @@ import type {
   PilotMissionEntry, PilotReport, ReportEntry, Role, TelemetryFeed, User, UserInfo,
 } from '../types';
 
+// ============================================================================================
+// GUÍA RÁPIDA · Endpoints del backend
+//
+// Para qué sirve: una función por cada endpoint del backend, agrupadas por módulo (missionApi, droneApi...).
+// Si el backend tiene un endpoint NUEVO: agrega aquí su función, usando el mismo path del controller.
+// Si QUITAS un endpoint del backend: borra su función; TypeScript marca las pantallas que la usaban.
+// ============================================================================================
+
 /*
  * Todos los endpoints del backend que usa el frontend, agrupados por módulo.
  * Cada función corresponde a un método de un controller de Spring Boot.
